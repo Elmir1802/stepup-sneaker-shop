@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Написать нам - STEPUP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>STEPUP</h1>
+        <a href="index.html">←Вернуться в магазин</a>
+    </header>
+    <main class="contact-container">
+        <h2>Напишите нам</h2>
+        <p>Есть вопросы? Заполните форму ниже.</p>
+        <form id="contactForm">
+            <label for="name">Ваше имя
+                <input type="text"
+                id="name"
+                placeholder="Ведите имя" required>
+                <label for="email">Электронная почта(Gmail)
+                    <input type="email"
+                    id="email" placeholder="example@gmail.com" required>
+                    <label for="message">Ваше сообщение</label>
+                    <textarea  id="message" placeholder="Напишите сообщение..."
+                    rows="5"required></textarea>
+                    <p id="errorMessagge" class="form-error"></p>
+                    <button type="submit">Отправить</button>
+                    <p id="successMessage" class="form-success" hidden>Отправлено!  Спасибо за сообщение.</p>
+                </label>
+            </label>
+        </form>
+    </main>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        const error = document.getElementById("errorMessage");
+        const success = document.getElementById("successMessage");
+
+        form.addEventListener("submit",function(event) {
+            event.preventDefault();
+            error.textContent = "";
+            success.hidden = true;
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (!name || !email || !message) {
+                error.textContent = "Ошибка! Заполнить все поля.";
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                error.textContent = "Введите правильный адрес электронной почты.";
+                return;
+            }
+            success.hidden = false;
+            form.reset();
+        });
+
+        const contactForm = document.getElementById("contactForm");
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                document.getElementById("formMessage").textContent = "Спаисбо! Ваше сообщение принято.";
+                contactForm.reset();
+            });
+        }
+    </script>
+    <a href="https://wa.me/996509122207" class="whatsapp-button" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+
+    <footer>
+        <p>STEPUP  ©  2026 - Учебный проект</p>
+    </footer>
+</body>
+</html>
