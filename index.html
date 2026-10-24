@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUPUP - Магазин кроссовок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">STUPUP<span>.</span></h2>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#products">Католог</a>
+            <a href="index.html">Магазин</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+        <button id="cartButton" class="cart-button">
+            Корзина (<span id="cartCount">0</span>)
+        </button>
+
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <p class="subtitle">НОВАЯ КОЛЛЕКЦИЯ</p>
+            <h1>Найди свою<br>идеальную пару.</h1>
+            <p class="description">Удобство, стиль и комфорт на каждый день.</p>
+            <a href="#products" class="main-button">Смотреть католог</a>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Популярные модели</h2>
+            <p class="section-description">
+                Выбирай кроссовки под свой стиль.
+            </p>
+            
+            <div class="products-list">
+                <article class="products-card">
+                    <div class="products.image">
+                      👟
+                    </div>
+                    <p class="category">Повседневные</p>
+                    <h3>Urban Classic</h3>
+                    <p class="price">3 999сом</p>
+                    <button class="add-button" data-name="UrbanClassic">В корзину</button>
+                </article>
+
+                <article class="products-card">
+                    <div class="products-imege">👟</div>
+                    <p class="category">Спортивные</p>
+                    <h3>Speed Runner</h3>
+                    <p class="price">5 499сом</p>
+                    <button class="add-button" data-name="SpeedRunner">В корзину</button>
+                </article>
+
+                <article class="products-card">
+                    <div class="products-imege">👟</div>
+                    <p class="category">Уличный стиль</p>
+                    <h3>Street One</h3>
+                    <p class="price">2 799сом</p>
+                    <button class="add-button" data-name="Street One">В корзину</button>
+                </article>
+            </div>
+            
+            <div class="products-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7v9wD5oJq1-mg6wI5-Oht0_BG7PfgAt3cn12BNW94Iw&s=10" alt="Jordan 4">
+                <h3>Jordan 4 Retro</h3>
+                <p>Стильные кроссовки для улицы</p>
+                <span class="price">4 499 сом</span>
+                <button class="add-button" data-name="Jordan 4 Retro">В корзину</button>
+            </div>
+
+            <div class="products-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPL14EZh84sNEnM2q6IKTyR6hCtTs927F64FZmzsDi-w&s=10" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p>Комфорт на каждый день</p>
+                <span class="price">3 399 сом</span>
+                <button class="add-button" data-name="Nike Air Max">В корзину</button>
+            </div>
+
+            <div class="products-card">
+                 <img src="https://cdn-images.farfetch-contents.com/17/94/65/95/17946595_40508979_600.jpg" alt="Yeezy">
+                 <h3>Yeezy Boost</h3>
+                 <p>Современный уличный стиль</p>
+                  <span class="price">4 199 сом</span>
+                 <button class="add-button" data-name="Yeezy Boost">В корзину</button>
+            </div>
+
+            <div class="products-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnef0tcZjQ8ztRLvSvrbaSDYB4ucxalMXfBqkEsLH6wg&s" alt="Nike Mind 002">
+                <h3>Nike Mind 002</h3>
+                <p>Стильные кроссовки для прогулок</p>
+                <span class="price">5 999 сом</span>
+                <button class="add-button" data-name="Nike Mind 002">В корзину</button>
+            </div>
+            <div class="products-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEe9_34rCiOillNrznDIPrVn2jWu3dE6BCX7qlFuYVvA&s=10" alt="NIke Air Force 1">
+                <h3>NIke Air Force 1</h3>
+                <p>Стильные кроссовки для повседневки</p>
+                <span class="price">3 499 сом</span>
+                <button class="add-button" data-name="NIke Air Force 1">В корзину</button>
+            </div>
+            <div class="products-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6a4cCBvLNcss4Uytn75wjQOiS5pyVwNeBPW7sXzt68Q&s" alt="Adidas Samba">
+                <h3>Adidas Samba</h3>
+                <p>Стильные кроссовки для улицы</p>
+                <span class="price">3 299 сом</span>
+                <button class="add-button" data-name="Adidas Samba">В корзину</button>
+            </div>
+            <div class="products-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJiEE1nF9D6YEOKHSjM9nddziT_ia6FywdqzLT6DFvNg&s=10" alt="Numeris">
+                <h3>Numeris</h3>
+                <p>Стильные кроссовки для улицы</p>
+                <span class="price">5 499 сом</span>
+                <button class="add-button" data-name="Numeris">В корзину</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cartPanel" class="cart-panel" hidden>
+        <div class="cart-header">
+            <h2>Твоя корзина</h2>
+            <button id="closeCart" type="button">×</button>
+        </div>
+    
+
+    <script src="script.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <footer>
+        <p>STEPUP  ©  2026 - Учебный проект</p>
+    </footer>
+</body>  
+</html>
